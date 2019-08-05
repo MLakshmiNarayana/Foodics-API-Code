@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Focus.Masters.DataStructs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Focus.Masters.DataStructs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ProductType">
+    <xs:annotation>
+      <xs:appinfo>
+        <ActualType Name="unsignedByte" Namespace="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Service" />
+      <xs:enumeration value="RawMaterial" />
+      <xs:enumeration value="IntermediateProduct" />
+      <xs:enumeration value="FinishedGoods" />
+      <xs:enumeration value="NonstockItem" />
+      <xs:enumeration value="Modifier" />
+      <xs:enumeration value="PRTConsumable" />
+      <xs:enumeration value="PRTTools" />
+      <xs:enumeration value="Ticket" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductType" nillable="true" type="tns:ProductType" />
+  <xs:simpleType name="ProductMake">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Product" />
+      <xs:enumeration value="Set" />
+      <xs:enumeration value="Kit" />
+      <xs:enumeration value="Combo" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductMake" nillable="true" type="tns:ProductMake" />
+</xs:schema>

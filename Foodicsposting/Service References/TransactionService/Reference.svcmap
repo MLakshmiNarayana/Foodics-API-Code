@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5c098b83-a0bc-4a2b-bea7-2ac55b506b54" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Focus8Library/TransactionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TransactionService.xsd" MetadataType="Schema" ID="003db3a7-7a05-4dae-860d-d88b39ff5313" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TransactionService1.xsd" MetadataType="Schema" ID="cfb3c5ad-ccdf-4888-9305-43392f202b52" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd6" />
+    <MetadataFile FileName="TransactionService.disco" MetadataType="Disco" ID="5f4abbde-9fc6-4e70-a437-e706d963aacd" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?disco" />
+    <MetadataFile FileName="TransactionService2.xsd" MetadataType="Schema" ID="b30e5a70-6d09-4cc5-a681-6a9b58a24890" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd4" />
+    <MetadataFile FileName="TransactionService3.xsd" MetadataType="Schema" ID="8c2b6b1c-5878-4011-b305-0cb558069ecb" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TransactionService4.xsd" MetadataType="Schema" ID="323bb2a3-db2f-48c4-ab14-a74465737b73" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd5" />
+    <MetadataFile FileName="TransactionService.wsdl" MetadataType="Wsdl" ID="37020ddf-20b0-4412-8cb5-059b06f49191" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?wsdl" />
+    <MetadataFile FileName="TransactionService5.xsd" MetadataType="Schema" ID="de383639-5af5-455d-8e3c-681fae77e227" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TransactionService6.xsd" MetadataType="Schema" ID="6b4ec489-aeb6-4cd5-9acd-cb38e6630ca4" SourceId="1" SourceUrl="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

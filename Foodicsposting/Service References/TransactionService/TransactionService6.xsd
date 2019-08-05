@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Focus8LibDS" />
+  <xs:import schemaLocation="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/Message" />
+  <xs:import schemaLocation="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost/Focus8Library/TransactionService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Focus.Pos.BusinessObjects" />
+  <xs:element name="LoadActions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iMenuId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadActionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="LoadActionsResult" nillable="true" type="q1:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVouchersOnAcc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVouchersOnAccResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetVouchersOnAccResult" nillable="true" type="q2:VouchersOnAccResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransViewList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransViewListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetTransViewListResult" nillable="true" type="q3:IdNamesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransGridData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objTransFilterData" nillable="true" type="q4:TransHomeFilter" />
+        <xs:element minOccurs="0" name="bWithHeaders" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iColCount" type="xs:int" />
+        <xs:element minOccurs="0" name="bWithViews" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransGridDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetTransGridDataResult" nillable="true" type="q5:TransGridDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransGridData1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objTransFilterData" nillable="true" type="q6:TransHomeFilter" />
+        <xs:element minOccurs="0" name="bWithHeaders" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iColCount" type="xs:int" />
+        <xs:element minOccurs="0" name="bWithViews" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransGridData1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetTransGridData1Result" nillable="true" type="q7:TransGridDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewsForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetViewsForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetViewsForUserResult" nillable="true" type="q8:IdNamesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransFieldDtls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="iViewId" type="xs:int" />
+        <xs:element minOccurs="0" name="bWithLinks" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransFieldDtlsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetTransFieldDtlsResult" nillable="true" type="q9:TransFieldResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterVoucherList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="bIsMaster" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iLanguageId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMasterVoucherListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetMasterVoucherListResult" nillable="true" type="q10:IdNamesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objMTrans" nillable="true" type="q11:MTrans" />
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sDocNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bByIds" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bIsNew" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bDoNotStockCheck" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SaveVoucherResult" nillable="true" type="q12:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucher2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objMTrans" nillable="true" type="q13:_MTrans" />
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sDocNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bByIds" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bIsNew" type="xs:boolean" />
+        <xs:element minOccurs="0" name="bDoNotStockCheck" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucher2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SaveVoucher2Result" nillable="true" type="q14:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBatchDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iProductId" type="xs:int" />
+        <xs:element minOccurs="0" name="iInvTagId" type="xs:int" />
+        <xs:element minOccurs="0" name="iVoucherDate" type="xs:int" />
+        <xs:element minOccurs="0" name="sBatchNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iBinId" type="xs:int" />
+        <xs:element minOccurs="0" name="iBaseVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sBaseVoucherNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iToInvTag" type="xs:int" />
+        <xs:element minOccurs="0" name="sBaseTransId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iUnitId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBatchDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetBatchDetailsResult" nillable="true" type="q15:BatchCheckResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBarCodeData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sBarCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iLanguageId" type="xs:int" />
+        <xs:element minOccurs="0" name="iBinId" type="xs:int" />
+        <xs:element minOccurs="0" name="iSkidId" type="xs:int" />
+        <xs:element minOccurs="0" name="iUnitId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBarCodeDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetBarCodeDataResult" nillable="true" type="q16:BarCodeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadVoucher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objLoadTrans" nillable="true" type="q17:LoadTransStruct" />
+        <xs:element minOccurs="0" name="bByIds" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iViewId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadVoucherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="LoadVoucherResult" nillable="true" type="q18:VoucherDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVoucherSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVoucherSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetVoucherSettingsResult" nillable="true" type="q19:VoucherSettingsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadBatchWiseData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iBodyId" type="xs:int" />
+        <xs:element minOccurs="0" name="iProductId" type="xs:int" />
+        <xs:element minOccurs="0" name="iNumExpiry" type="xs:int" />
+        <xs:element minOccurs="0" name="iExpUnit" type="xs:int" />
+        <xs:element minOccurs="0" name="iTagId" type="xs:int" />
+        <xs:element minOccurs="0" name="bAllowExpiredBatchs" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iBatchPick" type="xs:short" />
+        <xs:element minOccurs="0" name="iVoucherDate" type="xs:int" />
+        <xs:element minOccurs="0" name="iReserveTransId" type="xs:long" />
+        <xs:element minOccurs="0" name="sOtherRowBodyId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadBatchWiseDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="LoadBatchWiseDataResult" nillable="true" type="q20:BatchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="TestResult" nillable="true" type="q21:TransFieldResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test1Response">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestRec">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestRecResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="TestRecResult" nillable="true" type="q22:VoucherDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVoucher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVoucherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="DeleteVoucherResult" nillable="true" type="q23:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucherFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objVoucherFields" nillable="true" type="q24:VoucherExtraFields" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucherFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SaveVoucherFieldsResult" nillable="true" type="q25:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadAttachment1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sVoucherType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sFieldId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sRowIndex" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadAttachment1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.microsoft.com/Message" name="DownloadAttachment1Result" type="q26:StreamBody" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadAttachment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sVoucherType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sFieldId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sRowIndex" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadAttachmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.microsoft.com/Message" name="DownloadAttachmentResult" type="q27:StreamBody" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnitFactor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iProductId" type="xs:int" />
+        <xs:element minOccurs="0" name="iUnitId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnitFactorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetUnitFactorResult" nillable="true" type="q28:UnitFactorResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClocseLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="lstTransIds" nillable="true" type="q29:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClocseLinkResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="ClocseLinkResult" nillable="true" type="q30:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VoucherExistorNot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VoucherExistorNotResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="VoucherExistorNotResult" nillable="true" type="q31:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEMail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="objFCSMailMesseges" nillable="true" type="q32:FCSMailMesseges" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SendEMailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SendEMailResult" nillable="true" type="q33:SentMessageResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanReturnCheque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iBank" type="xs:int" />
+        <xs:element minOccurs="0" name="strCheque" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="bCallFromPmt" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CanReturnChequeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="CanReturnChequeResult" nillable="true" type="q34:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCancelledCheque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="sChequeNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveCancelledChequeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SaveCancelledChequeResult" nillable="true" type="q35:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsChequeValid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+        <xs:element minOccurs="0" name="sVoucherNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCheque" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iBookNo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsChequeValidResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="IsChequeValidResult" nillable="true" type="q36:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucherPOS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="lstPOSVoucherData" nillable="true" type="q37:ArrayOfPOSVoucherData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveVoucherPOSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="SaveVoucherPOSResult" nillable="true" type="q38:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayInDateTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iOutletId" type="xs:int" />
+        <xs:element minOccurs="0" name="bTransDateAsDayInDate" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayInDateTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetDayInDateTimeResult" nillable="true" type="q39:ResultInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersBySearchTypeForPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/Focus.Pos.BusinessObjects" minOccurs="0" name="objMemberRecord" nillable="true" type="q40:MemberRecord" />
+        <xs:element minOccurs="0" name="iCount" type="xs:int" />
+        <xs:element minOccurs="0" name="iRecordPerPage" type="xs:int" />
+        <xs:element minOccurs="0" name="iSearchCustomerType" type="xs:short" />
+        <xs:element minOccurs="0" name="iSearchBasedOn" type="xs:short" />
+        <xs:element minOccurs="0" name="iMemberSearchType" type="xs:short" />
+        <xs:element minOccurs="0" name="iPhoneSearchType" type="xs:short" />
+        <xs:element minOccurs="0" name="bIsPageWiseSearch" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMembersBySearchTypeForPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetMembersBySearchTypeForPageResult" nillable="true" type="q41:MemberRecordResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeesBySearchTypeForPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/Focus.Pos.BusinessObjects" minOccurs="0" name="objEmpRecord" nillable="true" type="q42:EmployeeRecord" />
+        <xs:element minOccurs="0" name="iCount" type="xs:int" />
+        <xs:element minOccurs="0" name="iRecordPerPage" type="xs:int" />
+        <xs:element minOccurs="0" name="iSearchEmployeeType" type="xs:int" />
+        <xs:element minOccurs="0" name="iSearchType" type="xs:short" />
+        <xs:element minOccurs="0" name="iSearchBasedOn" type="xs:short" />
+        <xs:element minOccurs="0" name="bRestrictSalesMan" type="xs:boolean" />
+        <xs:element minOccurs="0" name="iOutletID" type="xs:int" />
+        <xs:element minOccurs="0" name="iAlternateLanguageId" type="xs:int" />
+        <xs:element minOccurs="0" name="CheckDiscountAllowedBySalemanAndWaiter" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeesBySearchTypeForPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetEmployeesBySearchTypeForPageResult" nillable="true" type="q43:EmployeeRecordResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductsForApp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/Focus.Pos.BusinessObjects" minOccurs="0" name="ReqProduct" nillable="true" type="q44:Product" />
+        <xs:element minOccurs="0" name="iCount" type="xs:int" />
+        <xs:element minOccurs="0" name="iRecordPerPage" type="xs:int" />
+        <xs:element minOccurs="0" name="iCutOffPriceIndex" type="xs:int" />
+        <xs:element minOccurs="0" name="iSearchBasedOn" type="xs:short" />
+        <xs:element minOccurs="0" name="bCheckTaxCodeExist" type="xs:boolean" />
+        <xs:element minOccurs="0" name="sCategoryFilter" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductsForAppResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetProductsForAppResult" nillable="true" type="q45:ProductsForAppResultPos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductModifiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iProductId" type="xs:int" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/Focus.Pos.BusinessObjects" minOccurs="0" name="objParams" nillable="true" type="q46:PriceBookParams" />
+        <xs:element minOccurs="0" name="bShowModifiersAlphabetically" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductModifiersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetProductModifiersResult" nillable="true" type="q47:ProductModifierResultPos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLinkedVouchers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iVoucherType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLinkedVouchersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetLinkedVouchersResult" nillable="true" type="q48:LinkDataResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVoucherAbbrevation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="arrVoucherTypes" nillable="true" type="q49:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVoucherAbbrevationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="GetVoucherAbbrevationResult" nillable="true" type="q50:ArrayOfVoucherAbbr" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReSaveVoucher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="lstIdName" nillable="true" type="q51:IdNamesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReSaveVoucherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/Focus8LibDS" minOccurs="0" name="ReSaveVoucherResult" nillable="true" type="q52:IdNamesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
